@@ -1,23 +1,45 @@
-<h1>Password Generator</h1>
-<div>
-  <label>Enter Length </label>
-  <input #passLengthEvent (input)="onChangeLength(passLengthEvent.value)" />
-</div>
-<div>
-  <input (change)="onChangeUseLetters()" type="checkbox" /><label>Use letter</label> 
-</div>
-<div>
-  <input (change)="onChangeUseNumbers()"type="checkbox" /><label>Use numbers</label> 
-</div>
-<div>
-  <input (change)="onChangeUseSymbols()" type="checkbox" /><label>Use symbols</label> 
-</div>
-<br/>
-<button 
-(click) = "onButtonClick()"
-[disabled]="!(length && (useNumbers || useLetters || useSymbols))">Generate</button>
-<br/>
-<div>
-  <label>Your Password</label>
-  <input [value] = "password"/>
-</div>
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <div class="box">
+          <h1 class="title is-centered">Password Generator</h1>
+          <div class="field">
+            <label class="label">Enter Length </label>
+            <div class="control">
+              <input class="input" #passLengthEvent (input)="onChangeLength(passLengthEvent.value)"
+                placeholder="Enter the length of your password" />
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="checkbox"><input class="checkbox" (change)="onChangeUseLetters()" type="checkbox" />Use
+                letter</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="checkbox"><input class="checkbox" (change)="onChangeUseNumbers()" type="checkbox" />Use
+                numbers</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="checkbox"><input class="checkbox" (change)="onChangeUseSymbols()" type="checkbox" />Use
+                symbols</label>
+            </div>
+          </div>
+          <button class="button is-success is-medium is-fullwidth" (click)="onButtonClick()"
+            [disabled]="!(length && (useNumbers || useLetters || useSymbols))">
+            Generate
+          </button>
+          <br />
+          <div class="field">
+            <label class="label">Your Password</label>
+            <input class="input" [value]="password" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
