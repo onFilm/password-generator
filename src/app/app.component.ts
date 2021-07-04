@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title= 'pwd';
-  length = 0;
+  length:any = 0;
   useLetters = false;
   useNumbers = false;
   useSymbols = false;
@@ -72,7 +72,7 @@ export class AppComponent {
   }
 
   clearAll() {
-    this.length = 0;
+    this.length = null;
     this.useLetters = false;
     this.useNumbers = false;
     this.useSymbols = false;

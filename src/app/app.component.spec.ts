@@ -26,7 +26,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     app.clearAll();
-    expect(app.length).toEqual(0);
+    expect(app.length).toEqual(null);
     expect(app.useLetters).toEqual(false);
     expect(app.useNumbers).toEqual(false);
     expect(app.useSymbols).toEqual(false);
