@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title= 'pwd';
   length = 0;
   useLetters = false;
   useNumbers = false;
