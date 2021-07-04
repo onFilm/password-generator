@@ -30,7 +30,7 @@ describe('AppComponent', () => {
     expect(app.useLetters).toEqual(false);
     expect(app.useNumbers).toEqual(false);
     expect(app.useSymbols).toEqual(false);
-    expect(app.password).toEqual('');
+    expect(app.password).toEqual(null);
   });
 
   it(`should have checkGenerate for isGenerateDisabled to false`, () => {
@@ -98,6 +98,6 @@ describe('AppComponent', () => {
     app.useSymbols = false;
     app.length = 0;
     app.onButtonClick();
-    expect(app.password).toBe('');
+    expect(app.password).toEqual('');
   });
 });
