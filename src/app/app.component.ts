@@ -11,7 +11,7 @@ export class AppComponent {
   useLetters = false;
   useNumbers = false;
   useSymbols = false;
-  password = '';
+  password:any = '';
   isGenerateDisabled = true;
 
   onButtonClick() {
@@ -76,6 +76,7 @@ export class AppComponent {
     this.useLetters = false;
     this.useNumbers = false;
     this.useSymbols = false;
-    this.password = '';
+    this.password = null;
+    this.isGenerateDisabled = true;
   }
 }
