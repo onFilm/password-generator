@@ -1,5 +1,7 @@
 # Pwd
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/667d2c73-5392-424a-b673-f4a0f34ad96e/deploy-status)](https://app.netlify.com/sites/get-pass-word/deploys)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
 ## Development server
